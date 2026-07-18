@@ -61,7 +61,9 @@ export default function Index() {
 
       <View style={styles.row}>
 
-        <TouchableOpacity style={styles.actionCard}>
+        <TouchableOpacity 
+        style={styles.actionCard}
+        onPress={() => router.push("/location")}>
           <Text style={styles.actionText}>Location</Text>
         </TouchableOpacity>
 
