@@ -77,7 +77,9 @@ export default function Index() {
 
       <View style={styles.row}>
 
-        <TouchableOpacity style={styles.actionCard}>
+        <TouchableOpacity 
+        style={styles.actionCard}
+          onPress={() => router.push("/clipboard")}>
           <Text style={styles.actionText}>Clipboard</Text>
         </TouchableOpacity>
 
