@@ -136,6 +136,29 @@ export default function CameraScreen() {
 
     };
 
+    const deletePhoto = () => {
+
+        Alert.alert(
+            "Delete Photo",
+            "Are you sure you want to delete this photo?",
+            [
+                {
+                    text: "Cancel",
+                    style: "cancel"
+                },
+                {
+                    text: "Delete",
+                    style: "destructive",
+                    onPress: () => {
+                        setImage(null);
+                        setCaptureTime("");
+                    }
+                }
+            ]
+        );
+
+    };
+
 
     if (image) {
 
@@ -183,10 +206,18 @@ export default function CameraScreen() {
                     </Text>
                 </TouchableOpacity>
 
+                <TouchableOpacity
+                    style={[styles.button, styles.deleteButton]}
+                    onPress={deletePhoto}
+                >
+                    <Text style={styles.buttonText}>
+                        Delete Photo
+                    </Text>
+                </TouchableOpacity>
+
             </ScrollView>
         );
     }
-
 
     return (
         <View style={styles.container}>

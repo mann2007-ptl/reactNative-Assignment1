@@ -67,7 +67,9 @@ export default function Index() {
           <Text style={styles.actionText}>Location</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.actionCard}>
+        <TouchableOpacity 
+        style={styles.actionCard}
+        onPress={() => router.push("/contact")}>
           <Text style={styles.actionText}>Contacts</Text>
         </TouchableOpacity>
 
