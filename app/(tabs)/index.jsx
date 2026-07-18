@@ -85,7 +85,7 @@ export default function Index() {
 
         <TouchableOpacity 
         style={styles.actionCard}
-         onPress={() => router.push("/preview")}>
+         onPress={() => router.push("/profile")}>
           <Text style={styles.actionText}>Profile</Text>
         </TouchableOpacity>
 
