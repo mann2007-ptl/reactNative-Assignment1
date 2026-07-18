@@ -51,7 +51,9 @@ export default function Index() {
           <Text style={styles.actionText}>Create Survey</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.actionCard}>
+        <TouchableOpacity 
+        style={styles.actionCard}
+        onPress={() => router.push("/camera")}>
           <Text style={styles.actionText}>Camera</Text>
         </TouchableOpacity>
 

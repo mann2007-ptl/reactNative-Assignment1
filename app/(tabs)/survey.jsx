@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#2C3E50",
     textAlign: "center",
-    marginBottom: 25,
+    marginTop : 30
   },
 
   label: {
