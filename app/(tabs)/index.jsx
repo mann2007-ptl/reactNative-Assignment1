@@ -6,6 +6,7 @@ import {
   ScrollView,
   TouchableOpacity,
 } from "react-native";
+import { router } from "expo-router";
 
 export default function Index() {
   return (
@@ -43,7 +44,10 @@ export default function Index() {
 
       <View style={styles.row}>
 
-        <TouchableOpacity style={styles.actionCard}>
+        <TouchableOpacity
+          style={styles.actionCard}
+          onPress={() => router.push("/survey")}
+        >
           <Text style={styles.actionText}>Create Survey</Text>
         </TouchableOpacity>
 
